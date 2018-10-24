@@ -5,19 +5,22 @@
         <p>POSTED ON: <?php the_time( 'F j, Y' ) ?> at <?php the_time( 'g:i a' ) ?>, in <?php the_category() ?> </p>
     </header>
 
-    <div class="row">
+    <div class=row>
 
-        <?php if ( has_post_thumbnail()) {
-                    echo the_post_thumbnail('thumbnail');
-                    echo '<div class="col-sm-8"><p>';
-                    echo the_content();
-                    echo '</p></div>';
-                    } else {
-                        echo '<div class="col"><p>';
-                        echo the_content();
-                        echo '</p></div>';
-                    };
-        ?>
+        <?php if ( has_post_thumbnail()): ?>
+            <div class="col">
+                <?php the_excerpt(); ?>
+            </div>
+
+            <div class="">
+                <?php the_post_thumbnail('thumbnail'); ?>
+            </div>
+
+        <?php else: ?>
+
+            <?php the_excerpt(); ?>
+        
+        <?php endif; ?>
 
     </div>
 

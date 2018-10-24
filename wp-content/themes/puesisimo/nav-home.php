@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg justify-content-between navbar-light bg-secondary fixed-top">
+<nav class="flex-wrap navbar navbar-expand justify-content-center navbar-light bg-secondary">
     
     <?php if (!is_front_page()) : ?>
     <a class="navbar-brand" href="#">
@@ -11,7 +11,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse w-100 d-flex justify-content-center my-3" id="navbarSupportedContent">
         <?php 
             wp_nav_menu([
                 'theme_location'=>'primary', 
@@ -20,10 +20,11 @@
                 'walker'=>new Walker_Nav_Primary(),
                 ]);
         ?>
-    <div>
+
+    </div>
+
     <?php get_search_form(); ?>
-    </div>
-    </div>
+    
 </nav>
     
 

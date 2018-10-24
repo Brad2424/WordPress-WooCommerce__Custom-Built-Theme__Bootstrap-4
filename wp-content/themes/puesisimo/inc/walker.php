@@ -59,7 +59,9 @@ class Walker_Nav_Primary extends Walker_Nav_Menu {
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 		
 		$classes[] = ($args->walker->has_children) ? 'dropdown' : '';
+		$classes[] = ($item->current || $item->current_item_ancestor) ? 'custom-active' : '';
 		$classes[] = 'menu-item-' . $item->ID;
+		$classes[] = 'rounded';
 		$classes[] = 'nav-item'; // will need to change this is if you a dropdown. Can add it manually in dashboard for each menu item
 		if( $depth && $args->walker->has_children ){
 			$classes[] = 'dropdown-submenu';
@@ -82,9 +84,9 @@ class Walker_Nav_Primary extends Walker_Nav_Menu {
 		//$attributes .= ( $args->walker->has_children ) ? ' class="dropdown-toggle" data-toggle="dropdown"' : '';
 
 		if( $depth > 0 ){
-			$attributes .= 'class="TEST2dropdown-item"';
+			$attributes .= 'class="dropdown-item"';
 		} else {
-			$attributes .= ($item->current) ? 'class="nav-link active"' : 'class="nav-link"';
+			$attributes .= ($item->current) ? 'class="nav-link custom-active rounded"' : 'class="nav-link"';
 		}
 		
 		$item_output = $args->before;

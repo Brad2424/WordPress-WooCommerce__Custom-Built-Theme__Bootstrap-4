@@ -1,24 +1,21 @@
-<?php 
-    get_header(); 
-    get_template_part( 'nav', 'bar' );
-?>
+<?php  get_header(); ?>
 
-<div class="container">
-    <div class="row">
-        <div class="col-8 m-auto">
+<?php get_template_part( 'nav', 'bar' ); ?>
 
-            <?php if ( have_posts() ): while ( have_posts() ): ?>
+<div class="flex-grow-1 mt-56"><!-- div for main content to push footer to bottom -->
 
-            <?php the_post(); ?>
-            <h1><?php the_title(); ?> - page.php</h1>
-            <?php the_content(); ?>
+    <div class="container">
+        <?php if ( have_posts() ): while ( have_posts() ): ?>
 
-            <?php endwhile; else: ?>
-            <h3 class="text-center display-4 mt-5"><?php _e( 'Sorry, page not found' ); ?></h3>
-            <?php endif ?>
+        <?php the_post(); ?>
+        <h1><?php the_title(); ?> - page.php</h1>
+        <?php the_content(); ?>
 
-        </div><!-- /.col -->
-    </div><!-- /.row -->
-</div> <!-- /.container for everything -->
+        <?php endwhile; else: ?>
+        <h3 class="text-center display-4 mt-5"><?php _e( 'Sorry, page not found' ); ?></h3>
+        <?php endif ?>
+    </div>
+
+</div><!-- /.flex-grow-1 for main content pushing footer to bottom -->
 
 <?php get_footer(); ?>

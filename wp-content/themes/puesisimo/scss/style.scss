@@ -6,7 +6,7 @@
 // ==========================
 // Custom Bootstrap
 // ==========================
-@import "custom-bootstrap";
+@import "custom-bootstrap-no-functions";
 
 // ==========================
 // Required Boostrap
@@ -18,8 +18,7 @@
 // =======================================================
 // Custom Bootstrap Using Bootrsap Functions/Mixins etc.
 // =======================================================
-
-
+@import "custom-bootstrap-with-functions";
 
 // ==========================
 // Optional Boostrap

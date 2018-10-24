@@ -24,12 +24,17 @@ add_action( 'wp_enqueue_scripts', 'addStylesAndScripts' );
     Activate Menus and customize li class
     ==================================================
 */
-function addThemeSetup() {
-    add_theme_support('menus');
-    register_nav_menu( 'primary', 'Primary Nav' );
-    register_nav_menu( 'secondary', 'Footer Nav' );
+function registerThemeMenus() {
+
+	register_nav_menus(
+		array(
+            'primary' 	=> 'Primary Nav',
+            'secondary' 	=> 'Footer Nav',		
+		)
+	);
+
 }
-add_action( 'init', 'addThemeSetup' );
+add_action( 'init', 'registerThemeMenus' );
 
 // /**
 //  * Filter the CSS class for a nav menu based on a condition.
@@ -54,6 +59,7 @@ add_theme_support( 'custom-header' );
 add_theme_support( 'post-thumbnails' );//this is for featured images
 //add_theme_support( 'post-formats', ['video'] ); //if going to use, must create the template in theme for these formats, then for example use using if (has_post_type('video')), then get_template_part('content', 'video') to get content-video.php
 add_theme_support( 'html5', ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption']);
+add_theme_support( "title-tag" );
 
 /*
     ==================================================
