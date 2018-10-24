@@ -1,0 +1,1 @@
+<img src="<?php echo header_image() ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>">

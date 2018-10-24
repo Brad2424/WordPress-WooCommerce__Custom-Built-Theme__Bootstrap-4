@@ -1,0 +1,15 @@
+$primary: rgb(89, 60, 31);
+
+$grid-breakpoints: (
+//must copy and keep all these breakpoint for auto menu toggle button on small screens
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  custom: 1300px
+);
+
+$container-max-widths: (
+  custom: 1300px
+);
