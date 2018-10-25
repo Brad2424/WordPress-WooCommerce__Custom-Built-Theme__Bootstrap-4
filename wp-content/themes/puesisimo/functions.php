@@ -6,10 +6,7 @@
     ==================================================
 */
 function addStylesAndScripts() {
-    //first deregister the jquery version that comes with wp
-    wp_deregister_script('jquery');
     //libraries and dependencies
-    wp_enqueue_script('jQuery-CDN', 'https://code.jquery.com/jquery-3.3.1.slim.js', array(), '', true);
     wp_enqueue_script('popperJS-CDN', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array('jQuery-CDN'), '', true);
     wp_enqueue_script('bootstrapJS-CDN', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jQuery-CDN'), '', true);
 
@@ -57,7 +54,7 @@ add_action( 'init', 'registerThemeMenus' );
 add_theme_support( 'custom-background' );
 add_theme_support( 'custom-header' );
 add_theme_support( 'post-thumbnails' );//this is for featured images
-//add_theme_support( 'post-formats', ['video'] ); //if going to use, must create the template in theme for these formats, then for example use using if (has_post_type('video')), then get_template_part('content', 'video') to get content-video.php
+//add_theme_support( 'post-formats', ['video', 'aside', 'image' etc. etc.] ); //if going to use, must create the template in theme for these formats, then for example use if (has_post_type('video')), then get_template_part('content', 'video') to get content-video.php
 add_theme_support( 'html5', ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption']);
 add_theme_support( "title-tag" );
 

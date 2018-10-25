@@ -5,16 +5,19 @@
 <div class="flex-grow-1 mt-56"><!-- div for main content to push footer to bottom -->
 
     <div class="container">
-        <?php if ( have_posts() ): while ( have_posts() ): ?>
 
-        <?php the_post(); ?>
+        <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+
         <h1><?php the_title(); ?> - page.php</h1>
         <?php the_content(); ?>
 
         <?php endwhile; else: ?>
+
         <h3 class="text-center display-4 mt-5"><?php _e( 'Sorry, page not found' ); ?></h3>
+
         <?php endif ?>
-    </div>
+
+    </div><!-- ./container -->
 
 </div><!-- /.flex-grow-1 for main content pushing footer to bottom -->
 

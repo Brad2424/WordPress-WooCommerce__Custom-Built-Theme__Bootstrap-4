@@ -1,11 +1,4 @@
 <?php 
-    /*
-        Template Name: Home
-    */
-    //adding a template name links it to the wp dashboard as a page template option
-?>
-
-<?php 
     get_header(); 
 ?>
 

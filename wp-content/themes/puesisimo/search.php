@@ -7,22 +7,27 @@
 
     <div class="container">
         <div class="row">
+        
             <div class="col-8 ">
+                <h2><?php wp_title(); ?></h2>
 
-                <?php if ( have_posts() ): while ( have_posts() ):
+                <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
                         
-                the_post();
-                get_template_part( 'content', 'search' );
+                <?php get_template_part( 'content', 'search' ); ?>
 
-                endwhile; else: ?>
-                <h3 class="text-center display-4 mt-5"><?php _e('Sorry, no posts match your critera' ); ?></h3>
+                <?php endwhile; else: ?>
+
+                <h3 class="text-center display-4 mt-5">
+                <?php _e('Sorry, no content matches your search' ); ?>
+                </h3>
+
                 <?php endif ?>
-
             </div>
 
             <div class="d-none d-md-block ml-auto">
                 <?php get_sidebar(); ?>
             </div>
+
         </div><!-- ./row -->
     </div><!-- ./container -->
 

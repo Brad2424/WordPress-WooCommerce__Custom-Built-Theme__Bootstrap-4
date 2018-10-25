@@ -1,10 +1,3 @@
-<?php 
-    /*
-        Template Name: Shop Initial
-    */
-    //adding a template name links it to the wp dashboard as a page template option
-?>
-
 <?php
     get_header();
     get_template_part( 'nav', 'bar' );
