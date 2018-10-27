@@ -22,10 +22,19 @@
             </div><!-- ./col-->
 
             <!-- 2nd column -->
-            <div class="col-12 col-md-6 order-md-1 flex-vert-center">
-                <h1 class="text-center"><?php bloginfo( 'name' ) ?></h1>
-                <h2 class="text-center">BG IMAGE, LOGO AND NAME</h2>
+            <?php //if ( have_posts() ): while ( have_posts() ): the_post();
+
+                    if( has_post_thumbnail() ):
+                    $urlImg = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+                    endif;
+            ?>
+            
+            <div class="col-12 col-md-6 order-md-1" style="background-image: url(<?php echo $urlImg; ?>); background-size: 100% 100%; min-height: 600px;">
+                <img class="mt-5" src="wp-content\themes\puesisimo\images\logo.png" alt="puesano logo"
+                style="width: 100%">
             </div><!-- ./col-->
+
+            <?php //endwhile; endif; ?>
         
         </div><!-- ./row-->
 

@@ -11,7 +11,7 @@
             <span>COPYRIGHT <?php echo date('Y'); ?></span>
         </footer> -->
 
-      <footer class="container pt-4 pt-md-5 border-top border-dark">
+      <footer class="container pt-4 pt-md-5">
             <div class="row justify-content-around">
                 <div class="mx-2">
                     <h5>Shop</h5>

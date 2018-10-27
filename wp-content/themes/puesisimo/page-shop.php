@@ -5,7 +5,7 @@
 
 <div class="flex-grow-1 mt-56"><!-- div for main content to push footer to bottom -->
     <div class="container">
-        <h2>Welcome to the Shop(custom page generated from page-10.php not index.php)</h2>
+        <h2>Welcome to the Shop</h2>
     </div>
 </div><!-- /.flex-grow-1 for main content pushing footer to bottom -->
 
