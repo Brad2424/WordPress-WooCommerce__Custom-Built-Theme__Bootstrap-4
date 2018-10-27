@@ -9,9 +9,6 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.navbar-nav .custom-active .custom-active {
+.custom-active {
     background: $primary;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: white;
 }

@@ -3,9 +3,9 @@
 // ==========================
 @import "wp-core";
 
-// ==========================
-// Custom Bootstrap
-// ==========================
+// ===================================
+// Overide Bootstrap Default Variables
+// ===================================
 @import "custom-bootstrap-no-functions";
 
 // ==========================
@@ -20,9 +20,9 @@
 // =======================================================
 @import "custom-bootstrap-with-functions";
 
-// ==========================
-// Optional Boostrap
-// =========================
+// ==============================
+// The Remianing Optional Boostrap
+// ===============================
 @import "../bootstrap/scss/root";
 @import "../bootstrap/scss/reboot";
 @import "../bootstrap/scss/type";
@@ -56,7 +56,7 @@
 @import "../bootstrap/scss/utilities";
 @import "../bootstrap/scss/print";
 
-// ==========================
+// ============================
 // Non-bootstrap Custom Classes
-// ==========================
+// ============================
 @import "custom";

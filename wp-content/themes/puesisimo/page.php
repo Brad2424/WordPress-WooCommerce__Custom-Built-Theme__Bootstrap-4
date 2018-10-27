@@ -1,5 +1,4 @@
 <?php  get_header(); ?>
-
 <?php get_template_part( 'nav', 'bar' ); ?>
 
 <div class="flex-grow-1 mt-56"><!-- div for main content to push footer to bottom -->

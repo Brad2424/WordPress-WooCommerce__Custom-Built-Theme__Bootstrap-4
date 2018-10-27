@@ -1,11 +1,9 @@
-<nav class="navbar navbar-expand-lg justify-content-between navbar-light bg-secondary fixed-top">
+<nav class="navbar navbar-expand-lg justify-content-between navbar-dark bg-dark fixed-top">
     
-    <?php if (!is_front_page()) : ?>
     <a class="navbar-brand" href="#">
-        <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Puesisimo
+    <img class="d-inline-block align-top" src="<?php echo get_template_directory_uri(  ) . '/images/logo.png' ?>" alt="Puesano Logo"
+    width="125" height="30">
     </a>
-    <?php endif; ?>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
