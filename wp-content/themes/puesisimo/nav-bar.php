@@ -2,7 +2,7 @@
     
     <a class="navbar-brand" href="#">
     <img class="d-inline-block align-top" src="<?php echo get_template_directory_uri(  ) . '/images/logo.png' ?>" alt="Puesano Logo"
-    width="125" height="30">
+    width="100" height="30">
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
