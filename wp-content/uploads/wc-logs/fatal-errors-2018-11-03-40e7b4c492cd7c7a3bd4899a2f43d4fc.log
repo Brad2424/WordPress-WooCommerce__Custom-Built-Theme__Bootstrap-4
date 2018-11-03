@@ -1,0 +1,4 @@
+2018-11-03T20:52:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\Users\Brad\Documents\Code\WordPress_Sites\puesisimo\wp-includes\Requests\Transport\cURL.php on line 162
+
+2018-11-03T20:52:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\Users\Brad\Documents\Code\WordPress_Sites\puesisimo\wp-admin\includes\template.php on line 12
+
