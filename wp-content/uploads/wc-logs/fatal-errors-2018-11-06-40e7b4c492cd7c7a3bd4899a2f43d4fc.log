@@ -1,0 +1,4 @@
+2018-11-06T22:19:35+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\Users\Brad\Documents\Code\WordPress_Sites\puesisimo\wp-content\plugins\custom-post-type-ui\inc\tools.php on line 13
+
+2018-11-06T22:20:14+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\Users\Brad\Documents\Code\WordPress_Sites\puesisimo\wp-content\plugins\woocommerce\includes\class-wc-data-store.php on line 138
+

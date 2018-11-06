@@ -2,3 +2,5 @@
 
 2018-11-03T20:52:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\Users\Brad\Documents\Code\WordPress_Sites\puesisimo\wp-admin\includes\template.php on line 12
 
+2018-11-03T21:22:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\Users\Brad\Documents\Code\WordPress_Sites\puesisimo\wp-content\plugins\advanced-custom-fields\includes\fields\class-acf-field-color_picker.php on line 3
+
